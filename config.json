@@ -1,0 +1,44 @@
+{
+    "network_settings": {
+        "default_interface": "any",
+        "default_filter": "tcp or udp",
+        "capture_timeout": 30,
+        "max_packets": 1000
+    },
+    "decryption_settings": {
+        "auto_detect": true,
+        "max_attempts": 100,
+        "common_keys": [
+            "password",
+            "123456",
+            "admin",
+            "secret",
+            "key",
+            "default",
+            "qwerty",
+            "letmein",
+            "welcome"
+        ],
+        "caesar_max_shift": 26,
+        "xor_max_key_length": 10
+    },
+    "ui_settings": {
+        "theme": "dark",
+        "font_family": "Consolas",
+        "font_size": 9,
+        "max_display_length": 100,
+        "auto_scroll": true
+    },
+    "security_settings": {
+        "log_activities": true,
+        "save_decrypted_data": false,
+        "require_confirmation": true,
+        "max_file_size": "10MB"
+    },
+    "analysis_settings": {
+        "enable_statistics": true,
+        "detect_suspicious_patterns": true,
+        "extract_credentials": true,
+        "analyze_protocols": true
+    }
+}
